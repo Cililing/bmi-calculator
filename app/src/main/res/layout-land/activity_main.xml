@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.przemek.bmicalculator.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/massLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="@string/mass_label"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/massInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/massLabel"
+        android:layout_alignBottom="@+id/massLabel"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/massLabel"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/heightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/massLabel"
+        android:layout_below="@+id/massInput"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/height_label"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/heightLabel"
+        android:layout_alignBottom="@+id/heightLabel"
+        android:layout_alignStart="@+id/massInput"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/unitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/heightLabel"
+        android:layout_below="@+id/heightInput"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/unit_label"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/unitChooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/unitLabel"
+        android:layout_alignEnd="@+id/heightInput"
+        android:layout_alignStart="@+id/heightInput"
+        android:layout_alignTop="@+id/unitLabel"
+        android:entries="@array/units_array"
+        android:textAlignment="textEnd"
+        android:prompt="@string/unit_prompt" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_button_label"
+        android:layout_alignBaseline="@+id/unitLabel"
+        android:layout_alignBottom="@+id/unitLabel"
+        android:layout_toEndOf="@+id/unitChooser"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calculateButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/massInput"
+        android:layout_marginEnd="23dp"
+        android:layout_toEndOf="@+id/massInput"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:text="@string/result_empty"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_button_label"
+        android:layout_below="@+id/resultTextView"
+        android:layout_alignEnd="@+id/resultTextView" />
+
+
+</RelativeLayout>
