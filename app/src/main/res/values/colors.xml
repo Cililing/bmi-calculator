@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#ff8c00</color>
+    <color name="colorPrimaryDark">#e21f1c</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="card_title">#db1735</color>
 
-    <color name="badBMI">#d50000</color>
-    <color name="averageBMI">#beb019</color>
-    <color name="goodBMI">#64dd17</color>
-
-    <color name="badInputBMI">#000000</color>
 </resources>

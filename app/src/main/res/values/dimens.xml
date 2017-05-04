@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_margin">16dp</dimen>
+    <dimen name="card_radius">0dp</dimen>
+
+    <dimen name="cover_height">80dp</dimen>
+    <dimen name="cover_width">120dp</dimen>
+
+    <dimen name="card_title_padding">10dp</dimen>
+    <dimen name="card_title">14dp</dimen>
+
+    <dimen name="card_poster_padding">10dp</dimen>
+
+    <dimen name="realese_date_padding_bottom">5dp</dimen>
+
+
+    <dimen name="realese_date">12dp</dimen>
+    <dimen name="description">12dp</dimen>
+
+</resources>
