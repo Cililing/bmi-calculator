@@ -1,25 +1,49 @@
 <resources>
-    <string name="app_name">My movies</string>
-    <string name="app_search">Search</string>
-    <string name="app_deatils">Movie details</string>
+
+    <!-- APP LABELS -->
+    <string name="app_name">Calculator BMI</string>
+    <string name="mass_label">Mass</string>
+    <string name="height_label">Height</string>
+    <string name="calculate_button_label">Calculate!</string>
+    <string name="share_button_label">Share!</string>
 
 
-    <string name="button_add_to_favourities">Add to favourities</string>
-    <string name="button_remove_from_favourities">Remove from favourities</string>
+    <!-- UNIT CHOSE -->
+    <string name="unit_label">Unit</string>
+    <string name="unit_prompt">Choose unit</string>
+    <string-array name="units_array">
+        <item>kg/m^2</item>
+        <item>pounds/inch^2</item>
+    </string-array>
 
-    <string name="Search">Search</string>
-    <string name="Favourities">Favourities</string>
+    <!-- SHARE BUTTON -->
+    <string name="bmi_share_text">"My BMI is: %1$.2f"</string>
+    <string name="bmi_share_text_label">"Share your BMI"</string>
+
+    <!-- BMI -->
+    <string name="result_empty">Click calculate to get your BMI</string>
+    <string name="result_wrong_data">Wrong data!</string>
+    <string name="result_ok">Your BMI is: %1$.2f </string>
+
+    <!-- MENU -->
+    <string name="save">Save data</string>
+    <string name="load">Load data</string>
+    <string name="about_me_activity">About author</string>
+    <string name="exit">Exit</string>
 
 
-    <string name="empty_search_res">Empty seatch result.</string>
+    <!-- SECOND ACTIVITY -->
+    <string name="about_me_text">
+        Project name: BMICalculator\nCreator: Przemyslaw Materna\nIndex: 228114
+    </string>
 
-    <string name="details_film_exists">Movie already exist in your collecion!</string>
-    <string name="details_film_ok">Movie saved in your collecion!</string>
-    <string name="details_film_deleted">Movie removed from your collecion!</string>
-    <string name="original_title">Original title</string>
-    <string name="vote_average">Average vote:</string>
-    <string name="language">Language:</string>
+    <!-- DATA SAVER -->
+    <string name="mass_saved_val">mass_val</string>
+    <string name="height_saved_val">height_val</string>
+    <string name="data_saved">Data saved!</string>
+    <string name="no_data_saved">There is no data saved :(</string>
+    <string name="date_loaded">Data loaded!</string>
 
-    <string name="error_info">An error occurred. Tap anywhere to connect again.</string>
-    <string name="error_toast">You still dont have internet connection.</string>
+    <!-- GENERAL -->
+    <string name="invalid_data">Invalid Data :(</string>
 </resources>

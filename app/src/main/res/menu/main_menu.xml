@@ -3,8 +3,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/main_menu_search_activity"
-        android:title="@string/Search"
+        android:id="@+id/menu_save"
+        android:orderInCategory="0"
+        android:title="@string/save"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_load"
+        android:orderInCategory="0"
+        android:title="@string/load"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="1"
+        android:title="@string/about_me_activity"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_exit"
+        android:orderInCategory="2"
+        android:title="@string/exit"
+        app:showAsAction="never" />
+
 
 </menu>
